@@ -34,6 +34,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - outline of current package prodigenr
     - I started prodigenr in my Phd
     - proj generator
+        - image of folder structure
     - why these formats
     - vignette of "manifesto"
 - how this helps... first steps
