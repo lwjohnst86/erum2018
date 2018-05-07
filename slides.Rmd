@@ -1,0 +1,59 @@
+---
+title: "eRum Lightning Talk"
+author: "Luke Johnston"
+date: "May 4, 2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- instructions: 15 slides max, 20 sec each, 5 min total -->
+
+## Outline brainstorm
+
+- intro, reason
+    - the need and demand for open and transparent sharing of code, projects,
+    and scientific output continues to increase
+    - will one day be a requirement to publish code and workflow along side 
+    the scientific output
+- other packages/tools
+    - rrtools
+    - devtools/usethis directly
+    - ProjectTemplate
+    - makeProject
+- need/gap
+    - many scientists and researchers (at least within health/medicine research)
+    don't know what open science/source is
+    - don't know how to share, or may want to but don't know where to begin
+    - many tools and services already available... lots of choice, but is overwhelming
+    - there are many "moving parts" to an open scientific project because of these
+    diverse set of specific tools/services to use (GitHub, DOI generators like
+    figshare or Zenodo, Git, R ... {{others}}).
+- outline of current package prodigenr
+    - I started prodigenr in my Phd
+    - proj generator
+    - why these formats
+    - vignette of "manifesto"
+- how this helps... first steps
+    - open science constantly evolving 
+    - automates and bundles together common open science tools (of course, strongly
+    opinionated on which tools to use)
+- Current stage:
+    - part of Mozilla Open Project Leader training
+    - Featured on Mozilla Pulse and went through Global Sprint
+    - Next version just submitted to CRAN
+- future goals
+    - focus current prodigenr on only  project generation
+    - expand other functionality to new package, rostools, including prodigenr
+    - more extensive documentation
+    - teaching material
+    - automated set up of reproducible tools/structure (docker)
+    - Link to issues and goals/plans/other things
+- Why did I present this here?
+    - Biggest reason: looking for contributors, feedback, thoughts, ideas
+    - Contact: links to DOI of slides/github.
+- acknowledgements
+
+- license (CC-BY)
