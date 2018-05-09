@@ -1,0 +1,86 @@
+---
+title: "An R toolkit to simplify and automate an open scientific workflow"
+author: "Luke Johnston"
+date: "May 4, 2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- instructions: 15 slides max, 20 sec each, 5 min total -->
+
+## Why need a toolkit? The rationale
+
+{{comics or pics to explain?}}
+{{recent journal title for a call to share code}}
+
+- the need and demand for open and transparent sharing of code, projects,
+and scientific output continues to increase
+- will one day be a requirement to publish code and workflow along side 
+the scientific output
+
+## Current available packages/workflows
+
+- [rrtools]
+- [devtools], [usethis] directly
+- [ProjectTemplate]
+- [makeProject]
+    
+[rrtools]:
+[devtools]:
+[usethis]:
+[ProjectTemplate]:
+[makeProject]:
+
+## What is missing? Gaps and needs {{wording?}}
+
+- many scientists and researchers (at least within health/medicine research)
+don't know what open science/source is
+- don't know how to share, or may want to but don't know where to begin
+- many tools and services already available... lots of choice, but is overwhelming
+- there are many "moving parts" to an open scientific project because of these
+diverse set of specific tools/services to use (GitHub, DOI generators like
+figshare or Zenodo, Git, R ... {{others}}).
+
+## The prodigenr package
+
+- I started prodigenr[^1] in my Phd
+- proj generator
+    - image of folder structure
+- why these formats
+- vignette of "manifesto"
+
+[^1]: {{prodigenr site}}
+
+## How does this help? It's a first baby step
+
+- open science constantly evolving 
+- automates and bundles together common open science tools (of course, strongly
+opinionated on which tools to use)
+
+## Current stage of development
+
+- Nearly completed [Mozilla Open Project Leader Training](link) with prodigenr
+- Featured on [Mozilla Pulse] and participated in [Global Sprint]
+- [Next version] just submitted to CRAN
+
+## Next steps and future plans
+
+- focus current prodigenr on only  project generation
+- expand other functionality to new package, rostools, including prodigenr
+- more extensive documentation
+- teaching material
+- automated set up of reproducible tools/structure (docker)
+- Link to issues and goals/plans/other things
+
+## Why present here?
+
+- Biggest reason: looking for contributors, feedback, thoughts, ideas
+
+## Contact and other information
+
+- funding (AU)
+- contact
+- license (CC-BY)
