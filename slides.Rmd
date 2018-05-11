@@ -62,18 +62,15 @@ knitr::opts_chunk$set(echo = FALSE)
     - "Here are options and a general workflow, you decide the rest"
     <!-- great for advanced users... not casual users -->
 
-## What is needed?
+## What is needed and why?
 
 - Lots of support and guidance <!--for casual users, this is good-->
+    - Many (health) researchers *don't know* what open science is
+    - Or *how to do it*
 - Opinionated on what services and tools to use
+    - So many tools and "moving parts"... it's *overwhelming*
 - Automate most tasks, rather than through documentation
-
-## Why are these needed?
-
-- Most researchers don't know what open science/source is
-    - At least within health research
-- May want to share or be open... but not sure how
-- Too many "moving parts" to an open science project... can be overwhelming
+    - *Default* for open science should be *easy*
 
 ## Enter the [prodigenr] package
 
