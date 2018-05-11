@@ -100,7 +100,7 @@ Advantages:
 
 ## Some of the other functions: 
 
-Adding scientific product file, e.g. manuscript, `create_manuscript()`:
+Add scientific product, e.g. poster, `create_poster()`:
 
 ```{r structure_doc, echo=FALSE, eval=TRUE, results='markup', comment=''}
 cat(readLines('structure_doc.txt', warn = FALSE), sep = '\n')

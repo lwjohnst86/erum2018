@@ -7,7 +7,7 @@
 │   └── README.md
 ├── doc
 │   ├── README.md
-│   └── manuscript.Rmd
+│   └── poster.Rmd
 ├── .Rbuildignore
 ├── .gitignore
 ├── DESCRIPTION
