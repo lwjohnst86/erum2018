@@ -54,7 +54,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## ... Probably. But, there are still things missing or not addressed
 
-- Fairly complicated or assume complex analyses
+- Fairly complicated
+- Assume complex analyses
 - Don't automate enough
 - Not targeted to "casual coders" 
     - e.g. most health researchers
@@ -66,10 +67,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Lots of support and guidance <!--for casual users, this is good-->
     - Many (health) researchers *don't know* what open science is
-    - Or *how to do it*
+    - ...Or *how to do it*
 - Opinionated on what services and tools to use
-    - So many tools and "moving parts"... it's *overwhelming*
-- Automate most tasks, rather than through documentation
+    - Many tools and "moving parts"... it's *overwhelming*
+- Automation of most tasks, rather than through documentation
     - *Default* for open science should be *easy*
 
 ## Enter the [prodigenr] package
@@ -94,7 +95,8 @@ Advantages:
 
 - Established infrastructure
 - Well developed through [devtools], [usethis]
-- Handles range of project difficulty (simple to complex)
+- Handles range in project difficulty 
+    - (simple to complex analyses)
 
 ## Some of the other functions: 
 
@@ -113,6 +115,15 @@ cat(readLines('structure_doc.txt', warn = FALSE), sep = '\n')
     - `include_mit_license()` for code
     - `include_strobe()` for health research reporting
 
+## Current stage of development
+
+- Participating in [Mozilla Open Project Leader Training](https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif)
+- Participated in [Mozilla Global Sprint](https://github.com/mozilla/global-sprint/issues/152)
+    - Gained some feedback
+- Soon submit next version to CRAN
+
+<!-- Featured on [Mozilla Pulse](https://www.mozillapulse.org/entry/643) -->
+
 ## Next steps and future plans
 
 - Focus prodigenr on project generation
@@ -121,21 +132,14 @@ cat(readLines('structure_doc.txt', warn = FALSE), sep = '\n')
 - Other functionality to new package, [rostools](https://github.com/lwjohnst86/rostools)
 - Teaching material and more docs
 
-## Current stage of development
-
-- Participating in [Mozilla Open Project Leader Training](https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif)
-- Featured on [Mozilla Pulse](https://www.mozillapulse.org/entry/643)
-    - Participated in [Global Sprint](https://github.com/mozilla/global-sprint/issues/152)
-    - Gained some contributors/feedback
-- Just submitted next version to CRAN
-
 ## How does this help? 
 
-- Open science is constantly evolving 
-- Package automates and bundles together common tools 
-    - (of course, strongly opinionated on which tools to use)
+- Open science is evolving 
+    - This automates and bundles together common tools 
+    - (of course, strongly opinionated on which tools)
 - Natural extension to the [devtools]/[usethis] framework
-- Researchers need tools, *this a first step* toward that
+- Researchers need easy tools
+    - *This one of the first steps* toward that
 
 ## Reason for this talk...
 
