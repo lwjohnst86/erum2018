@@ -19,13 +19,7 @@ slides > slide:not(.nobackground):after {
 }
 </style>
 
-## Demand for more open science
-
-![From https://ec.europa.eu/research/openscience](images/open-science-eu.png)
-
-![From Nature News](images/share-code-nature-news.png)
-
-## Why need a toolkit for open science workflows?
+## Why have a toolkit for open science workflows?
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -35,7 +29,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 !["Scratch" image from [PhD Comics](http://phdcomics.com/comics/archive_print.php?comicid=1689), 3/12/2014](images/phd-comics-code-scratch.gif)
 
-## Current available packages/workflows
+## Demand for more open science is increasing
+
+![From Nature News](images/share-code-nature-news.png)
+
+![From https://ec.europa.eu/research/openscience](images/open-science-eu.png)
+
+## Current available R packages/workflows
 
 - [rrtools]
 - [ProjectTemplate]
