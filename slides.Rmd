@@ -1,9 +1,31 @@
 ---
 title: "An R toolkit to simplify and automate an open scientific workflow"
 author: "Luke Johnston"
-date: "May 4, 2018"
-output: slidy_presentation
+output: 
+    ioslides_presentation:
+        fig_caption: true
+        slide_level: 1
+        theme: journal
 ---
+
+<style type="text/css">
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+</style>
+
+## Demand for more open science
+
+![From https://ec.europa.eu/research/openscience](images/open-science-eu.png)
+
+![From Nature News](images/share-code-nature-news.png)
+
+## Why need a toolkit for open science workflows?
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -11,76 +33,127 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <!-- instructions: 15 slides max, 20 sec each, 5 min total -->
 
-## Why need a toolkit? The rationale
-
-{{comics or pics to explain?}}
-{{recent journal title for a call to share code}}
-
-- the need and demand for open and transparent sharing of code, projects,
-and scientific output continues to increase
-- will one day be a requirement to publish code and workflow along side 
-the scientific output
+!["Scratch" image from [PhD Comics](http://phdcomics.com/comics/archive_print.php?comicid=1689), 3/12/2014](images/phd-comics-code-scratch.gif)
 
 ## Current available packages/workflows
 
 - [rrtools]
-- [devtools], [usethis] directly
 - [ProjectTemplate]
 - [makeProject]
+- [devtools], [usethis] directly
     
-[rrtools]:
-[devtools]:
-[usethis]:
-[ProjectTemplate]:
-[makeProject]:
+[rrtools]: https://github.com/benmarwick/rrtools
+[devtools]: https://github.com/r-lib/devtools
+[usethis]: https://github.com/r-lib/usethis
+[ProjectTemplate]: http://projecttemplate.net/
+[makeProject]: https://CRAN.R-project.org/package=makeProject
 
-## What is missing? Gaps and needs {{wording?}}
+## ... Just another competing package?
 
-- many scientists and researchers (at least within health/medicine research)
-don't know what open science/source is
-- don't know how to share, or may want to but don't know where to begin
-- many tools and services already available... lots of choice, but is overwhelming
-- there are many "moving parts" to an open scientific project because of these
-diverse set of specific tools/services to use (GitHub, DOI generators like
-figshare or Zenodo, Git, R ... {{others}}).
+![Image from: https://xkcd.com/927/](images/xkcd-standards.png)
 
-## The prodigenr package
+## ... Probably. But, there are still things missing or not addressed
 
-- I started prodigenr[^1] in my Phd
-- proj generator
-    - image of folder structure
-- why these formats
-- vignette of "manifesto"
+- Fairly complicated or assume complex analyses
+- Don't automate enough
+- Not targeted to "casual coders" 
+    - e.g. most health researchers
+- Are not opinionated enough
+    - "Here are options and a general workflow, you decide the rest"
+    <!-- great for advanced users... not casual users -->
 
-[^1]: {{prodigenr site}}
+## What is needed?
 
-## How does this help? It's a first baby step
+- Lots of support and guidance <!--for casual users, this is good-->
+- Opinionated on what services and tools to use
+- Automate most tasks, rather than through documentation
 
-- open science constantly evolving 
-- automates and bundles together common open science tools (of course, strongly
-opinionated on which tools to use)
+## Why are these needed?
 
-## Current stage of development
+- Most researchers don't know what open science/source is
+    - At least within health research
+- May want to share or be open... but not sure how
+- Too many "moving parts" to an open science project... can be overwhelming
 
-- Nearly completed [Mozilla Open Project Leader Training](link) with prodigenr
-- Featured on [Mozilla Pulse] and participated in [Global Sprint]
-- [Next version] just submitted to CRAN
+## Enter the [prodigenr] package
+
+<img src="images/prodigenr-github.png" style="width:800px"></img>
+<!-- started in PhD because I kept having to copy previous projects and removing
+content -->
+
+[prodigenr]: http://prodigenr.lukewjohnston.com/
+
+## Main function... 
+
+Generate project directory, `setup_project()`:
+
+```{r structure_project, echo=FALSE, eval=TRUE, results='markup', comment=''}
+cat(readLines('structure_project.txt', warn = FALSE), sep = '\n')
+```
+
+## ... similar structure to R packages
+
+Advantages:
+
+- Established infrastructure
+- Well developed through [devtools], [usethis]
+- Handles range of project difficulty (simple to complex)
+
+## Some of the other functions: 
+
+Adding scientific product file, e.g. manuscript, `create_manuscript()`:
+
+```{r structure_doc, echo=FALSE, eval=TRUE, results='markup', comment=''}
+cat(readLines('structure_doc.txt', warn = FALSE), sep = '\n')
+```
+
+<!--
+## Other functions: 
+
+- Add author(s) to project metadata (=DESCRIPTION file):
+    - `add_first_author()`
+    - `add_coauthor()`
+- Add tag and version to project at e.g. time of submission:
+-->
 
 ## Next steps and future plans
 
-- focus current prodigenr on only  project generation
-- expand other functionality to new package, rostools, including prodigenr
-- more extensive documentation
-- teaching material
-- automated set up of reproducible tools/structure (docker)
-- Link to issues and goals/plans/other things
+- Focus prodigenr on project generation
+- Tag/version bump after e.g. manuscript submission
+- Reproducibility tools (e.g. travis, docker)
+- Other functionality to new package, [rostools](https://github.com/lwjohnst86/rostools)
+- Teaching material and more docs
 
-## Why present here?
+## Current stage of development
 
-- Biggest reason: looking for contributors, feedback, thoughts, ideas
+- Participating in [Mozilla Open Project Leader Training](https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif)
+- Featured on [Mozilla Pulse](https://www.mozillapulse.org/entry/643)
+    - Participated in [Global Sprint](https://github.com/mozilla/global-sprint/issues/152)
+    - Gained some contributors/feedback
+- Just submitted next version to CRAN
 
-## Contact and other information
+## How does this help? 
 
-- funding (AU)
-- contact
-- license (CC-BY)
+- Open science is constantly evolving 
+- Package automates and bundles together common tools 
+    - (of course, strongly opinionated on which tools to use)
+- Natural extension to the [devtools]/[usethis] framework
+- Researchers need tools, *this a first step* toward that
+
+## Reason for this talk...
+
+- Looking for feedback, thoughts, comments
+- But mostly... seeking potential contributors/collaborators!
+
+<!-- -->
+
+- **Contact info:**
+    - GitHub: [`@lwjohnst86`](https://github.com/lwjohnst86)
+    - Email: lwjohnst@ph.au.dk
+    - Slides: https://github.com/lwjohnst86/erum2018
+
+<img src="images/au-logo.png" style="width:200px"></img>
+
+<small>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/cc-by-logo.png"></a><br>Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 International License</a>.
+</small>
