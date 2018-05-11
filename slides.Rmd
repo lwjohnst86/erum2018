@@ -104,14 +104,14 @@ Adding scientific product file, e.g. manuscript, `create_manuscript()`:
 cat(readLines('structure_doc.txt', warn = FALSE), sep = '\n')
 ```
 
-<!--
 ## Other functions: 
 
 - Add author(s) to project metadata (=DESCRIPTION file):
     - `add_first_author()`
     - `add_coauthor()`
-- Add tag and version to project at e.g. time of submission:
--->
+- Include some common "tools":
+    - `include_mit_license()` for code
+    - `include_strobe()` for health research reporting
 
 ## Next steps and future plans
 
