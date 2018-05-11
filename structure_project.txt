@@ -1,0 +1,16 @@
+.
+├── R
+│   ├── README.md
+│   ├── fetch_data.R
+│   └── setup.R
+├── data
+│   └── README.md
+├── doc
+│   └── README.md
+├── .Rbuildignore
+├── .gitignore
+├── DESCRIPTION
+├── ProjectName.Rproj
+└── README.md
+
+3 directories, 12 files
