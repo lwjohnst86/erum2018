@@ -13,5 +13,3 @@
 ├── DESCRIPTION
 ├── ProjectName.Rproj
 └── README.md
-
-3 directories, 12 files
